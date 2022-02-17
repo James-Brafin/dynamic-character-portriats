@@ -1,0 +1,26 @@
+{
+    "Changes": [
+        {
+	   "Action": "Load",
+           "Target": "Portraits/Caroline",
+           "FromFile": "assets/{{Target}}/Base.png"
+	},
+
+// Choose Middle
+	{
+	   "Action": "EditImage",
+	   "Target": "Portraits/Caroline",
+	   "FromFile": "assets/{{Target}}/Middle_Layer/{{Caroline_Middle}}_{{Caroline_Middle_Placeholder}}.png",
+	   "PatchMode": "Overlay"
+	},
+
+// Choose Hair
+	{
+	   "Action": "EditImage",
+	   "Target": "Portraits/Caroline",
+	   "FromFile": "assets/{{Target}}/Hair/Hair_{{Random:1, 2, 3}}.png",
+	   "PatchMode": "Overlay"
+	},
+
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "Name": "Custom NPC Outfits",
+    "Author": "James Brafin",
+    "Version": "1.0.0",
+    "Description": "Dynamically choose clothing for NPCs each day, and easily add your own!.",
+    "UniqueID": "JamesBrafin.CustomNPCOutfits",
+    "UpdateKeys": [], // when you release the mod, see https://stardewvalleywiki.com/Modding:Modder_Guide/APIs/Update_checks
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}
