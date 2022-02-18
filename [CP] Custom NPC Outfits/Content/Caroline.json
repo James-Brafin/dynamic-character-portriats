@@ -10,7 +10,7 @@
 	{
 	   "Action": "EditImage",
 	   "Target": "Portraits/Caroline",
-	   "FromFile": "assets/{{Target}}/Middle_Layer/{{Caroline_Middle}}_{{Caroline_Middle_Placeholder}}.png",
+	   "FromFile": "assets/{{Target}}/Middle_Layer/{{Caroline_Middle}}{{Caroline_Middle_Placeholder}}.png",
 	   "PatchMode": "Overlay"
 	},
 

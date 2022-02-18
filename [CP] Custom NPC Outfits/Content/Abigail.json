@@ -18,7 +18,7 @@
 	{
 	   "Action": "EditImage",
 	   "Target": "Portraits/Abigail",
-	   "FromFile": "assets/{{Target}}/Middle_Layer/{{Abigail_Middle}}{{Abigail_Middle_Placeholder}}",
+	   "FromFile": "assets/{{Target}}/Middle_Layer/{{Abigail_Middle}}{{Abigail_Middle_Placeholder}}.png",
 	   "PatchMode": "Overlay"
 	},
 
@@ -26,7 +26,7 @@
 	{
 	   "Action": "EditImage",
 	   "Target": "Portraits/Abigail",
-	   "FromFile": "assets/{{Target}}/Neck_Acessory/{{Random:Choker_1, Blank}}.png",
+	   "FromFile": "assets/{{Target}}/Neck_Accessory/{{Random:Choker_1, Blank}}.png",
 	   "PatchMode": "Overlay"
 	},
 

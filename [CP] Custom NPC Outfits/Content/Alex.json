@@ -18,7 +18,7 @@
 	{
 	   "Action": "EditImage",
 	   "Target": "Portraits/Alex",
-	   "FromFile": "assets/{{Target}}/Middle_Layer/{{Alex_Middle}}_{{Alex_Middle_Placeholder}}.png",
+	   "FromFile": "assets/{{Target}}/Middle_Layer/{{Alex_Middle}}{{Alex_Middle_Placeholder}}.png",
 	   "PatchMode": "Overlay"
 	},
 
