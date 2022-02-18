@@ -1,9 +1,19 @@
 {
     "Changes": [
-        {
-	   "Action": "Load",
-           "Target": "Portraits/Abigail",
-           "FromFile": "assets/{{Target}}/Base.png"
+
+// Load in Hair Underlayer
+	{
+		"Action": "Load",
+        "Target": "Portraits/Abigail",
+        "FromFile": "assets/{{Target}}/Hair_Back/Hair_{{Random:1, 2, 3, 4, 5, 6 |key=Abigail_Hair}}.png"
+	},
+
+// Load in Body Sprite
+    {
+	   "Action": "EditImage",
+       "Target": "Portraits/Abigail",
+       "FromFile": "assets/{{Target}}/Base.png",
+	   "PatchMode": "Overlay"
 	},
 
 // Choose Bottom
@@ -26,15 +36,26 @@
 	{
 	   "Action": "EditImage",
 	   "Target": "Portraits/Abigail",
+	   "FromFile": "assets/{{Target}}/Neck_Accessory/Blank.png",
+	   "PatchMode": "Overlay",
+	   "When": {
+			"Abigail_Bottoms |contains=Turtleneck_": "false"
+		}
+		
+	},
+	
+	{
+	   "Action": "EditImage",
+	   "Target": "Portraits/Abigail",
 	   "FromFile": "assets/{{Target}}/Neck_Accessory/{{Random:Choker_1, Blank}}.png",
-	   "PatchMode": "Overlay"
+	   "PatchMode": "Overlay",	   
 	},
 
 // Choose Hair
 	{
 	   "Action": "EditImage",
 	   "Target": "Portraits/Abigail",
-	   "FromFile": "assets/{{Target}}/Hair/Hair_{{Random:1, 2, 3, 4, 5, 6}}.png",
+	   "FromFile": "assets/{{Target}}/Hair_Front/Hair_{{Random:1, 2, 3, 4, 5, 6|key=Abigail_Hair}}.png",
 	   "PatchMode": "Overlay"
 	},
 

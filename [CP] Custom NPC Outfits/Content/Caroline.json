@@ -1,9 +1,18 @@
 {
     "Changes": [
-        {
-	   "Action": "Load",
-           "Target": "Portraits/Caroline",
-           "FromFile": "assets/{{Target}}/Base.png"
+// Load in Hair Underlayer
+	{
+		"Action": "Load",
+        "Target": "Portraits/Caroline",
+        "FromFile": "assets/{{Target}}/Hair_Back/Hair_{{Random:1, 2, 3 |key=Caroline_Hair}}.png"
+	},
+
+// Load in Body Sprite
+    {
+	   "Action": "EditImage",
+       "Target": "Portraits/Caroline",
+       "FromFile": "assets/{{Target}}/Base.png",
+	   "PatchMode": "Overlay"
 	},
 
 // Choose Middle
@@ -18,7 +27,7 @@
 	{
 	   "Action": "EditImage",
 	   "Target": "Portraits/Caroline",
-	   "FromFile": "assets/{{Target}}/Hair/Hair_{{Random:1, 2, 3}}.png",
+	   "FromFile": "assets/{{Target}}/Hair/Hair_{{Random:1, 2, 3 |key=Caroline_Hair}}.png",
 	   "PatchMode": "Overlay"
 	},
 
