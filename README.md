@@ -9,7 +9,7 @@ Characters can change clothes and try new looks, and it's easy to add new pieces
 - Easy addition of new items and hairstyles
 
 ## Future Plans
-- Dymanic outfit shifts based on location, weather, and season!
+- Dymanic outfit shifts based on weather, and season!
 - Additional asset types (accessories, clothing types, etc)
 - Sprites for all of the vanilla characters!
 
