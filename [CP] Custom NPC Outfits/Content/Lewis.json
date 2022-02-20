@@ -1,0 +1,43 @@
+{
+    "Changes": [
+
+// Load in Body Base
+	{
+		"Action": "Load",
+        "Target": "Portraits/Lewis",
+		 "FromFile": "assets/{{Target}}/Base.png",
+        
+	},
+	
+// Add Hair
+    {
+	   "Action": "EditImage",
+       "Target": "Portraits/Lewis",
+	   "FromFile": "assets/{{Target}}/Hair/Hair_1.png",
+	   "PatchMode": "Overlay"
+	},
+	
+// Add Bottom_Layer
+    {
+	   "Action": "EditImage",
+       "Target": "Portraits/Lewis",
+	   "FromFile": "assets/{{Target}}/Bottom_Layer/Buttonup_{{Random: 1, 2}}.png",
+	   "PatchMode": "Overlay"
+	},
+	
+// Add Middle_Layer
+    {
+	   "Action": "EditImage",
+       "Target": "Portraits/Lewis",
+	   "FromFile": "assets/{{Target}}/Middle_Layer/Suspenders.png",
+	   "PatchMode": "Overlay"
+	},
+	
+// Add Hat
+    {
+	   "Action": "EditImage",
+       "Target": "Portraits/Lewis",
+	   "FromFile": "assets/{{Target}}/Hat/Hat_1.png",
+	   "PatchMode": "Overlay"
+	},
+}

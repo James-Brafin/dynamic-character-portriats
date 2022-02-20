@@ -1,0 +1,195 @@
+{
+    "Format": "1.24.0",
+	"DynamicTokens": [
+	{
+		"Name": "Blank",
+		"Value": "1"
+	},
+	
+//Abigail_Bottoms Handler
+	{
+		"Name": "Abigail_Tanktop",
+		"Value": "{{Random: 1, 2, 3, 4}}"
+	},
+	{
+		"Name": "Abigail_Turtleneck",
+		"Value": "{{Random: 1, 2, 3, 4}}"
+	},
+	{
+		"Name": "Abigail_Bottoms",
+		"Value": "{{Random: Tanktop_ |key=Abigail_Bottom_Class}}",
+		"When": {
+				  "Season": "spring, summer",
+				  "Weather": "sun, rain, storm, snow, wind"
+				}
+    },
+		{
+		"Name": "Abigail_Bottoms",
+		"Value": "{{Random: Turtleneck_ |key=Abigail_Bottom_Class}}",
+		"When": {
+				  "Season": "fall, winter",
+				  "Weather": "sun, rain, storm, snow, wind"
+				}
+    },
+	{			
+		"Name": "Abigail_Bottom_Placeholder",
+		"Value": "{{Random: {{Abigail_Tanktop}} |key=Abigail_Bottom_Class}}",
+		"When": {
+				  "Season": "spring, summer",
+				  "Weather": "sun, rain, storm, snow, wind"
+				}
+	},
+	{			
+		"Name": "Abigail_Bottom_Placeholder",
+		"Value": "{{Random: {{Abigail_Turtleneck}} |key=Abigail_Bottom_Class}}",
+		"When": {
+				  "Season": "fall, winter",
+				  "Weather": "sun, rain, storm, snow, wind"
+				}
+	},
+//Use Case: assets/{{Target}}/Bottom_Layer/{{Abigail_Bottoms}}{{Abigail_Bottom_Placeholder}}.png
+
+//Abigail_Middle Handler	
+	{
+		"Name": "Abigail_Cloak",
+		"Value": "{{Random: 1, 2, 3}}"
+	},
+	{
+		"Name": "Abigail_Jacket",
+		"Value": "{{Random: 1, 2}}"
+	},
+	
+	{			
+		"Name": "Abigail_Middle_Placeholder",
+		"Value": "{{Random: {{Blank}}, {{Abigail_Cloak}}, {{Abigail_Jacket}} |key=Abigail_Middle_Class}}",
+		"When": {
+				  "Season": "spring, summer, fall, winter",
+				  "Weather": "sun, rain, storm, snow, wind"
+				}
+	},
+	
+	{
+		"Name": "Abigail_Middle",
+		"Value": "{{Random: Blank_, Cloak_ |key=Abigail_Middle_Class}}",
+		"When": {
+					"Season": "spring, summer, fall, winter",
+					"Weather": "sun, rain, storm, snow, wind",
+					"Abigail_Bottoms |contains=Turtleneck_": "false",
+				}
+	},
+//Use Case: assets/{{Target}}/Middle_Layer/{{Abigail_Middle}}_{{Abigail_Middle_Placeholder}}.png
+
+//Alex_Bottoms Handler
+	{
+		"Name": "Alex_Tshirt",
+		"Value": "{{Random: 1, 2}}"
+	},
+	{
+		"Name": "Alex_Bottoms",
+		"Value": "{{Random: Tshirt_ |key=Alex_Bottom_Class}}",
+		"When": {
+				  "Season": "spring, summer, fall, winter",
+				  "Weather": "sun, rain, storm, snow, wind"
+				}
+    },
+	{			
+		"Name": "Alex_Bottom_Placeholder",
+		"Value": "{{Random: {{Alex_Tshirt}} |key=Alex_Bottom_Class}}",
+		"When": {
+				  "Season": "spring, summer, fall, winter",
+				  "Weather": "sun, rain, storm, snow, wind"
+				}
+	},
+//Use Case: assets/{{Target}}/Bottom_Layer/{{Alex_Bottoms}}{{Alex_Bottom_Placeholder}}.png
+
+//Alex_Middle Handler
+	{
+		"Name": "Alex_Jersey",
+		"Value": "{{Random: 1, 2, 3}}"
+	},
+	{
+		"Name": "Alex_Middle",
+		"Value": "{{Random: Blank_, Jersey_ |key=Alex_Middle_Class}}",
+		"When": {
+				  "Season": "spring, summer, fall, winter",
+				  "Weather": "sun, rain, storm, snow, wind"
+				}
+    	},
+	{			
+		"Name": "Alex_Middle_Placeholder",
+		"Value": "{{Random: {{Blank}}, {{Alex_Jersey}} |key=Alex_Middle_Class}}",
+		"When": {
+				  "Season": "spring, summer, fall, winter",
+				  "Weather": "sun, rain, storm, snow, wind"
+				}
+	},
+//Use Case: assets/{{Target}}/Middle_Layer/{{Alex_Middle}}_{{Alex_Middle_Placeholder}}.png
+
+//Caroline_Middle Handler
+	{
+		"Name": "Caroline_Flannel",
+		"Value": "{{Random: 1, 2, 3}}"
+	},
+	{
+		"Name": "Caroline_Polo",
+		"Value": "{{Random: 1, 2, 3}}"
+	},
+	{
+		"Name": "Caroline_Middle",
+		"Value": "{{Random: Polo_ |key=Caroline_Middle_Class}}",
+		"When": {
+				  "Season": "spring, summer",
+				  "Weather": "sun, rain, storm, snow, wind"
+				}
+    },
+	{
+		"Name": "Caroline_Middle",
+		"Value": "{{Random: Flannel_ |key=Caroline_Middle_Class}}",
+		"When": {
+				  "Season": "fall, winter",
+				  "Weather": "sun, rain, storm, snow, wind"
+				}
+    },
+	{			
+		"Name": "Caroline_Middle_Placeholder",
+		"Value": "{{Random: {{Caroline_Polo}} |key=Caroline_Middle_Class}}",
+		"When": {
+				  "Season": "spring, summer",
+				  "Weather": "sun, rain, storm, snow, wind"
+				}
+	},
+	{			
+		"Name": "Caroline_Middle_Placeholder",
+		"Value": "{{Random: {{Caroline_Flannel}} |key=Caroline_Middle_Class}}",
+		"When": {
+				  "Season": "fall, winter",
+				  "Weather": "sun, rain, storm, snow, wind"
+				}
+	},
+//Use Case: assets/{{Target}}/Middle_Layer/{{Caroline_Middle}}_{{Caroline_Middle_Placeholder}}.png
+
+					],
+
+    "Changes": [
+    {
+		"Action": "Include",
+	    "FromFile": "Content/Abigail.json"
+	},
+	{
+		"Action": "Include",
+	    "FromFile": "Content/Alex.json"
+	},
+	{
+		"Action": "Include",
+	    "FromFile": "Content/Caroline.json"
+	},
+		{
+		"Action": "Include",
+	    "FromFile": "Content/Lewis.json"
+	},
+		{
+		"Action": "Include",
+	    "FromFile": "Content/Penny.json"
+	},
+    ]
+}
