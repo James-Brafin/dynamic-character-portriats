@@ -1,0 +1,11 @@
+{
+    "Name": "Dynamic Character Portriats",
+    "Author": "James the Dabbler",
+    "Version": "0.0.1",
+    "Description": "A mod to dynamically create character outfits.",
+    "UniqueID": "JamesTheDabbler.DynamicCharacterPortriats",
+    "UpdateKeys": [], // when you release the mod, see https://stardewvalleywiki.com/Modding:Modder_Guide/APIs/Update_checks
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}

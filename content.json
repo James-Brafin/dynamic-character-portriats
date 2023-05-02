@@ -1,0 +1,55 @@
+{
+    "Format": "1.29.0",
+	"DynamicTokens": [
+	
+      //Abigail
+	  
+	  //Rear Hair Accessory
+	  
+	  {
+		  "Name": "Abigail_Rear_Hair_Accessory",
+		  "Value": "None, Blue_Bow"
+	  },
+	  
+	  //Hairstyles (Must have front and back)
+	  
+	  {
+		  "Name": "Abigail_Hair",
+		  "Value": "1, 2, 3, 4, 5, 6"
+	  },
+	  
+	  //Bottom Clothes Layer
+	  {
+		  "Name": "Abigail_Bottom",
+		  "Value": "{{Random: Tanktop}}"
+	  },
+	  
+	  // Tanktops
+	  {
+		  "Name": "Abigail_B_Selector",
+		  "Value": "1, 2, 3, 4"
+		  "When": { "Abigail_Bottom": "Tanktop" }
+	  },
+	  
+	  //Top Clothes Layer
+	  {
+		  "Name": "Abigail_Top",
+		  "Value": "{{Random: Jacket}}"
+	  },
+	  
+	  // Jackets
+	  {
+		  "Name": "Abigail_T_Selector",
+		  "Value": "1"
+		  "When": { "Abigail_Top": "Jacket" }
+	  },
+	  
+   ]
+    "Changes": [
+        [
+    {
+		"Action": "Include",
+	    "FromFile": "assets/Abigail/Abigail.json"
+	}
+    ]
+}
