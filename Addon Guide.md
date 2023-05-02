@@ -14,8 +14,8 @@ It can also include hair assets, but depending on the character it may require y
 Assets should always be in PNG format.
 
 Most assets have a fairly strict naming convention:
-* Hair: Hair_#.png (For both front and back pieces)
-* Clothing: (clothing_type)_#.png
+* Hair: `Hair_#.png` (For both front and back pieces)
+* Clothing: `(clothing_type)_#.png`
 
 Accessories don't have strict naming conventions.
 When looking for the matching tokens for characters, be sure to look at the comments, 
