@@ -9,13 +9,13 @@ add your own pieces as well.
 * More characters and assets added regularly!
 
 ### Currently Supports:
+* Native support for different weathers and seasons.
 * Abigail
 	* Six Hairstyles
 	* Four Outfits
 	
 ### Next Patch:
-* Add native seasonal functionality to mod
-*  more outfits to Abigail
+* More outfits for Abigail
 
 ### Future Plans:
 * Add native support for swapping portrait sets
@@ -23,7 +23,7 @@ add your own pieces as well.
 * Lots of outfits
 * Improved JSON generation to streamline adding custom assets
 
-If you'd like to add your own outfits, see the Addon Guide.
+If you'd like to add your own outfits, see the included Addon Guide.
 
 Please note: Because it's been a year, my code's a mess, and I've made a lot of improvements on my workflow, I'm essentially starting from scratch on this.
 I won't be adding more characters until I get the basic structure finalized, but once I do they should start coming pretty fast.

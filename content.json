@@ -8,20 +8,105 @@
 	  
 	  {
 		  "Name": "Abigail_Rear_Hair_Accessory",
-		  "Value": "None, Blue_Bow"
+		  "Value": "None, Blue_Bow, Pink_Bow, Cyan_Bow"
 	  },
 	  
 	  //Hairstyles (Must have front and back)
 	  
 	  {
 		  "Name": "Abigail_Hair",
-		  "Value": "1, 2, 3, 4, 5, 6"
+		  "Value": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13"
 	  },
 	  
 	  //Bottom Clothes Layer
 	  {
 		  "Name": "Abigail_Bottom",
-		  "Value": "{{Random: Tanktop}}"
+		  "Value": "{{Random: Tshirt, Sleeveless}}"
+		  "When": {
+			  "Season": "Spring"
+			  "Weather": "Sun"
+		  }
+	  },
+	  
+	  {
+		  "Name": "Abigail_Bottom",
+		  "Value": "{{Random: Tshirt}}"
+		  "When": {
+			  "Season": "Spring"
+			  "Weather": "Rain, Storm"
+		  }
+	  },
+	  
+	  {
+		  "Name": "Abigail_Bottom",
+		  "Value": "{{Random: Tshirt}}"
+		  "When": {
+			  "Season": "Spring"
+			  "Weather": "Wind"
+		  }
+	  },
+	  
+	  {
+		  "Name": "Abigail_Bottom",
+		  "Value": "{{Random: Sleeveless, Tanktop}}"
+		  "When": {
+			  "Season": "Summer"
+			  "Weather": "Sun"
+		  }
+	  },
+	  
+	  {
+		  "Name": "Abigail_Bottom",
+		  "Value": "{{Random: Tshirt, Tanktop}}"
+		  "When": {
+			  "Season": "Summer"
+			  "Weather": "Rain, Storm"
+		  }
+	  },
+	  
+	  {
+		  "Name": "Abigail_Bottom",
+		  "Value": "{{Random: Sleeveless, Tshirt, Tanktop}}"
+		  "When": {
+			  "Season": "Fall"
+			  "Weather": "Sun"
+		  }
+	  },
+	  
+	  {
+		  "Name": "Abigail_Bottom",
+		  "Value": "{{Random: Tshirt, Tanktop}}"
+		  "When": {
+			  "Season": "Fall"
+			  "Weather": "Rain, Storm"
+		  }
+	  },
+	  
+	  {
+		  "Name": "Abigail_Bottom",
+		  "Value": "{{Random: Tshirt}}"
+		  "When": {
+			  "Season": "Fall"
+			  "Weather": "Wind"
+		  }
+	  },
+	  
+	  {
+		  "Name": "Abigail_Bottom",
+		  "Value": "{{Random: Tshirt}}"
+		  "When": {
+			  "Season": "Winter"
+			  "Weather": "Sun"
+		  }
+	  },
+	  
+	  {
+		  "Name": "Abigail_Bottom",
+		  "Value": "{{Random: Tshirt}}"
+		  "When": {
+			  "Season": "Winter"
+			  "Weather": "Snow"
+		  }
 	  },
 	  
 	  // Tanktops
@@ -31,18 +116,131 @@
 		  "When": { "Abigail_Bottom": "Tanktop" }
 	  },
 	  
+	  // Sleeveless
+	  {
+		  "Name": "Abigail_B_Selector",
+		  "Value": "1, 2, 3, 4"
+		  "When": { "Abigail_Bottom": "Sleveless" }
+	  },
+	  
+	  // Tshirt
+	  {
+		  "Name": "Abigail_B_Selector",
+		  "Value": "1, 2, 3, 4, 5, 6"
+		  "When": { "Abigail_Bottom": "Tshirt" }
+	  },
+	  
 	  //Top Clothes Layer
 	  {
 		  "Name": "Abigail_Top",
 		  "Value": "{{Random: Jacket}}"
+		  "When": {
+			  "Season": "Spring"
+			  "Weather": "Sun"
+		  }
+	  },
+	  
+	  {
+		  "Name": "Abigail_Top",
+		  "Value": "{{Random: Hoodie, Jacket, Flannel}}"
+		  "When": {
+			  "Season": "Spring"
+			  "Weather": "Rain, Storm"
+		  }
+	  },
+	  
+	  {
+		  "Name": "Abigail_Top",
+		  "Value": "{{Random: Hoodie, Jacket, Flannel}}"
+		  "When": {
+			  "Season": "Spring"
+			  "Weather": "Wind"
+		  }
+	  },
+	  
+	  {
+		  "Name": "Abigail_Top",
+		  "Value": "{{Random: Jacket}}"
+		  "When": {
+			  "Season": "Summer"
+			  "Weather": "Sun"
+		  }
+	  },
+	  
+	  {
+		  "Name": "Abigail_Top",
+		  "Value": "{{Random: Jacket}}"
+		  "When": {
+			  "Season": "Summer"
+			  "Weather": "Rain, Storm"
+		  }
+	  },
+	  
+	  {
+		  "Name": "Abigail_Top",
+		  "Value": "{{Random: Jacket}}"
+		  "When": {
+			  "Season": "Fall"
+			  "Weather": "Sun"
+		  }
+	  },
+	  
+	  {
+		  "Name": "Abigail_Top",
+		  "Value": "{{Random: Jacket, Flannel}}"
+		  "When": {
+			  "Season": "Fall"
+			  "Weather": "Rain, Storm"
+		  }
+	  },
+	  
+	  {
+		  "Name": "Abigail_Top",
+		  "Value": "{{Random: Hoodie, Jacket, Flannel}}"
+		  "When": {
+			  "Season": "Fall"
+			  "Weather": "Wind"
+		  }
+	  },
+	  
+	  {
+		  "Name": "Abigail_Top",
+		  "Value": "{{Random: Hoodie, Flannel}}"
+		  "When": {
+			  "Season": "Winter"
+			  "Weather": "Sun"
+		  }
+	  },
+	  
+	  {
+		  "Name": "Abigail_Top",
+		  "Value": "{{Random: Hoodie, Flannel}}"
+		  "When": {
+			  "Season": "Winter"
+			  "Weather": "Snow"
+		  }
 	  },
 	  
 	  // Jackets
 	  {
 		  "Name": "Abigail_T_Selector",
-		  "Value": "1"
+		  "Value": "1, 2"
 		  "When": { "Abigail_Top": "Jacket" }
-	  },
+	  }
+	  
+	  // Flannels
+	  {
+		  "Name": "Abigail_T_Selector",
+		  "Value": "1, 2, 3, 4"
+		  "When": { "Abigail_Top": "Flannel" }
+	  }
+	  
+	   // Hoodie
+	  {
+		  "Name": "Abigail_T_Selector",
+		  "Value": "1, 2, 3, 4, 5"
+		  "When": { "Abigail_Top": "Hoodie" }
+	  }
 	  
    ]
     "Changes": [
