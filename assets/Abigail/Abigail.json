@@ -1,0 +1,67 @@
+{
+    "Changes": [
+
+	// Load in Body Base
+	{
+		"Action": "Load",
+        "Target": "assets/Abigail/Portraits",
+		"FromFile": "{{Target}}/Base.png",
+        
+	},
+	
+	// Add Rear Hair Accessory
+	{
+		"Action": "EditImage",
+		"Target": "assets/Abigail/Portraits",
+		"FromFile": "{{Target}}/Rear_Hair_Accessory/{{Random:{{Abigail_Rear_Hair_Accessory}}}}.png",
+		"PatchMode": "Overlay"
+	},
+	
+	// Add Back Hair
+	{
+		"Action": "EditImage",
+		"Target": "assets/Abigail/Portraits",
+		"FromFile": "{{Target}}/Hair/Back_Hair/Hair_{{Random:{{Abigail_Hair}} |key=Abigail_Hair}}.png",
+		"PatchMode": "Overlay"
+	},
+	
+	// Add Bottom Layer
+	{
+		"Action": "EditImage",
+		"Target": "assets/Abigail/Portraits",
+		"FromFile": "{{Target}}/Clothing/Bottom_Layer/{{Random:{{Abigail_Bottom}} |key=Abigail_Bottom}}/{{Random:{{Abigail_Bottom}} |key=Abigail_Bottom}}_{{Random:{{Abigail_B_Selector}}}}.png",
+		"PatchMode": "Overlay"
+	},
+	
+	// Add Top Layer
+	{
+		"Action": "EditImage",
+		"Target": "assets/Abigail/Portraits",
+		"FromFile": "{{Target}}/Clothing/Top_Layer/{{Random:{{Abigail_Top}} |key=Abigail_Top}}/{{Random:{{Abigail_Top}} |key=Abigail_Top}}_{{Random:{{Abigail_T_Selector}}}}.png",
+		"PatchMode": "Overlay"
+	},
+	
+	//Add Emote, Face
+	{
+		"Action": "EditImage",
+		"Target": "assets/Abigail/Portraits",
+		"FromFile": "{{Target}}/Body/Emote.png",
+		"PatchMode": "Overlay"
+	},
+	
+	{
+		"Action": "EditImage",
+		"Target": "assets/Abigail/Portraits",
+		"FromFile": "{{Target}}/Rear_Hair_Accessory/Face.png",
+		"PatchMode": "Overlay"
+	},
+	
+	// Add Front Hair
+	{
+		"Action": "EditImage",
+		"Target": "assets/Abigail/Portraits",
+		"FromFile": "{{Target}}/Hair/Front_Hair/Hair_{{Random:{{Abigail_Hair}} |key=Abigail_Hair}}.png",
+		"PatchMode": "Overlay"
+	}
+
+}

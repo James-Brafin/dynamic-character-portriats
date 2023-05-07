@@ -1,16 +1,31 @@
-# Custom NPC Outfits
-
-**Custom NPC Outfits** is a Content Patcher mod which allows creators to readily customize NPCs.
-It seperates characters into a collection of layers, allowing for the individual customization of hairstyles, outfits, and accessories that change from day to day.
-Characters can change clothes and try new looks, and it's easy to add new pieces to a character's repitoire!
+**Dynamic Character Portraits** is a plugin for Content Patcher that allows for the dynamic generation of outfits for NPCs.
+Not only does this come pre-equipped with all sorts of outfits, hairstyles, and accessories, the system makes it straightforward to 
+add your own pieces as well.
 
 ## Features
-- Outfits that change on a daily basis
-- Easy addition of new items and hairstyles
+* Dynamically generated outfits that change daily!
+* Easily modifyable and expandable!
+* Comes prepackaged with all sorts of its own assets!
+* More characters and assets added regularly!
 
-## Future Plans
-- Dymanic outfit shifts based on weather and season!
-- Additional asset types (accessories, clothing types, etc)
-- Sprites for all of the vanilla characters!
+### Currently Supports:
+* Native support for different weathers and seasons.
+* Abigail
+	* Six Hairstyles
+	* Four Outfits
+	
+### Next Patch:
+* More outfits for Abigail
 
-A guide for adding your own assets will be coming in the future.
+### Future Plans:
+* Add native support for swapping portrait sets
+* Add all Vanilla characters, and hopefully popular modded ones
+* Lots of outfits
+* Improved JSON generation to streamline adding custom assets
+
+If you'd like to add your own outfits, see the included Addon Guide.
+
+Please note: Because it's been a year, my code's a mess, and I've made a lot of improvements on my workflow, I'm essentially starting from scratch on this.
+I won't be adding more characters until I get the basic structure finalized, but once I do they should start coming pretty fast.
+
+If you'd like a tutorial on my workflow for this process, please let me know! I'm happy to create one.
