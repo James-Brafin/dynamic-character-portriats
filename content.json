@@ -242,12 +242,117 @@
 		  "When": { "Abigail_Top": "Hoodie" }
 	  }
 	  
+	  //Marnie 
+	  
+	  //Hairstyles (Must have front and back)
+	  
+	  {
+		  "Name": "Marnie_Hair",
+		  "Value": "1, 2, 3, 4, 5, 6"
+	  },
+	  
+	  //Clothes Layer
+	  {
+		  "Name": "Marnie_Clothes",
+		  "Value": "{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9}}"
+		  "When": {
+			  "Season": "Spring"
+			  "Weather": "Sun"
+		  }
+	  },
+	  
+	  {
+		  "Name": "Marnie_Clothes",
+		  "Value": "{{Random: 1, 6, 7, 8, 9}}"
+		  "When": {
+			  "Season": "Spring"
+			  "Weather": "Rain, Storm"
+		  }
+	  },
+	  
+	  {
+		  "Name": "Marnie_Clothes",
+		  "Value": "{{Random: 1, 6, 7, 8, 9}}"
+		  "When": {
+			  "Season": "Spring"
+			  "Weather": "Wind"
+		  }
+	  },
+	  
+	  {
+		  "Name": "Marnie_Clothes",
+		  "Value": "{{Random: 2, 3, 4, 5}}"
+		  "When": {
+			  "Season": "Summer"
+			  "Weather": "Sun"
+		  }
+	  },
+	  
+	  {
+		  "Name": "Marnie_Clothes",
+		  "Value": "{{Random: 2, 3, 4, 5, 6, 7, 8, 9}}"
+		  "When": {
+			  "Season": "Summer"
+			  "Weather": "Rain, Storm"
+		  }
+	  },
+	  
+	  {
+		  "Name": "Marnie_Clothes",
+		  "Value": "{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9}}"
+		  "When": {
+			  "Season": "Fall"
+			  "Weather": "Sun"
+		  }
+	  },
+	  
+	  {
+		  "Name": "Marnie_Clothes",
+		  "Value": "{{Random: 6, 7, 8, 9, 10, 11, 12}}"
+		  "When": {
+			  "Season": "Fall"
+			  "Weather": "Rain, Storm"
+		  }
+	  },
+	  
+	  {
+		  "Name": "Marnie_Clothes",
+		  "Value": "{{Random: 6, 7, 8, 9, 10, 11, 12}}"
+		  "When": {
+			  "Season": "Fall"
+			  "Weather": "Wind"
+		  }
+	  },
+	  
+	  {
+		  "Name": "Marnie_Clothes",
+		  "Value": "{{Random: 6, 7, 8, 9, 10, 11, 12}}"
+		  "When": {
+			  "Season": "Winter"
+			  "Weather": "Sun"
+		  }
+	  },
+	  
+	  {
+		  "Name": "Marnie_Clothes",
+		  "Value": "{{Random: 6, 7, 8, 9}}"
+		  "When": {
+			  "Season": "Winter"
+			  "Weather": "Snow"
+		  }
+	  }
+	  
    ]
     "Changes": [
         [
     {
 		"Action": "Include",
 	    "FromFile": "assets/Abigail/Abigail.json"
+	}
+	
+	{
+		"Action": "Include",
+	    "FromFile": "assets/Marnie/Marnie.json"
 	}
     ]
 }

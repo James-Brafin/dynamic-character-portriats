@@ -52,7 +52,7 @@
 	{
 		"Action": "EditImage",
 		"Target": "assets/Abigail/Portraits",
-		"FromFile": "{{Target}}/Rear_Hair_Accessory/Face.png",
+		"FromFile": "{{Target}}/Body/Face.png",
 		"PatchMode": "Overlay"
 	},
 	
