@@ -11,11 +11,14 @@ add your own pieces as well.
 ### Currently Supports:
 * Native support for different weathers and seasons.
 * Abigail
-	* Six Hairstyles
-	* Four Outfits
+    * Thirteen Hairstyles
+    * 154 Outfits
+ * Marnie
+    * Six hairstyles
+    * 12 Outfits
 	
 ### Next Patch:
-* More outfits for Abigail
+* Adding Alex
 
 ### Future Plans:
 * Add native support for swapping portrait sets
